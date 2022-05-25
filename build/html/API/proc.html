@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>radtraq.proc &mdash; RadTraq 0.post1+g764607b documentation</title>
+  <title>radtraq.proc &mdash; RadTraq 0.post1+g4a47f69 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/plot_directive.css" type="text/css" />
@@ -27,7 +27,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="radtraq.proc.calc_avg_profile" href="generated/radtraq.proc.calc_avg_profile.html" />
-    <link rel="prev" title="radtraq.plotting.plot_cr_raster" href="generated/radtraq.plotting.plot_cr_raster.html" /> 
+    <link rel="prev" title="radtraq.plotting.plot_self_consistency" href="generated/radtraq.plotting.plot_self_consistency.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -38,7 +38,7 @@
             <a href="../index.html" class="icon icon-home"> RadTraq
           </a>
               <div class="version">
-                0.post1+g764607b
+                0.post1+g4a47f69
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -50,6 +50,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../source/auto_examples/index.html">RadTraq Example Gallery</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">API Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="plotting.html">radtraq.plotting</a></li>
@@ -57,8 +58,10 @@
 <li class="toctree-l3"><a class="reference internal" href="generated/radtraq.proc.calc_avg_profile.html">radtraq.proc.calc_avg_profile</a></li>
 <li class="toctree-l3"><a class="reference internal" href="generated/radtraq.proc.calc_cloud_mask.html">radtraq.proc.calc_cloud_mask</a></li>
 <li class="toctree-l3"><a class="reference internal" href="generated/radtraq.proc.calc_noise_floor.html">radtraq.proc.calc_noise_floor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/radtraq.proc.calc_zdr_offset.html">radtraq.proc.calc_zdr_offset</a></li>
 <li class="toctree-l3"><a class="reference internal" href="generated/radtraq.proc.extract_profile.html">radtraq.proc.extract_profile</a></li>
 <li class="toctree-l3"><a class="reference internal" href="generated/radtraq.proc.extract_profile_at_lat_lon.html">radtraq.proc.extract_profile_at_lat_lon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/radtraq.proc.extract_rhi_profile.html">radtraq.proc.extract_rhi_profile</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="utils.html">radtraq.utils</a></li>
@@ -96,7 +99,7 @@
   <span class="target" id="module-radtraq.proc"></span><section id="radtraq-proc">
 <h1>radtraq.proc<a class="headerlink" href="#radtraq-proc" title="Permalink to this headline"></a></h1>
 <p>This module contains procedures for creating a cloud mask.</p>
-<table class="longtable docutils align-default">
+<table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
 <col style="width: 90%" />
@@ -111,11 +114,17 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/radtraq.proc.calc_noise_floor.html#radtraq.proc.calc_noise_floor" title="radtraq.proc.calc_noise_floor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_noise_floor</span></code></a>(obj, variable[, ...])</p></td>
 <td><p>Main function for getting the noise floor</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/radtraq.proc.extract_profile.html#radtraq.proc.extract_profile" title="radtraq.proc.extract_profile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_profile</span></code></a>(obj, azimuth, ground_dist[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/radtraq.proc.calc_zdr_offset.html#radtraq.proc.calc_zdr_offset" title="radtraq.proc.calc_zdr_offset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_zdr_offset</span></code></a>(obj[, zdr_var, thresh])</p></td>
+<td><p>Function for extracting vertical profile over a location from a RHI scan</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/radtraq.proc.extract_profile.html#radtraq.proc.extract_profile" title="radtraq.proc.extract_profile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_profile</span></code></a>(obj, azimuth, ground_dist[, ...])</p></td>
 <td><p>Function for extracting vertical profile over a location from a PPI scan giving azimuth direction and ground range distance</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/radtraq.proc.extract_profile_at_lat_lon.html#radtraq.proc.extract_profile_at_lat_lon" title="radtraq.proc.extract_profile_at_lat_lon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_profile_at_lat_lon</span></code></a>(obj, desired_lat, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/radtraq.proc.extract_profile_at_lat_lon.html#radtraq.proc.extract_profile_at_lat_lon" title="radtraq.proc.extract_profile_at_lat_lon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_profile_at_lat_lon</span></code></a>(obj, desired_lat, ...)</p></td>
 <td><p>Function for extracting vertical profile over a location defined by latitude and longitude from a PPI scan</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/radtraq.proc.extract_rhi_profile.html#radtraq.proc.extract_rhi_profile" title="radtraq.proc.extract_rhi_profile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_rhi_profile</span></code></a>(obj[, append_obj, ...])</p></td>
+<td><p>Function for extracting vertical profile over a location from a RHI scan</p></td>
 </tr>
 </tbody>
 </table>
@@ -127,7 +136,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="generated/radtraq.plotting.plot_cr_raster.html" class="btn btn-neutral float-left" title="radtraq.plotting.plot_cr_raster" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="generated/radtraq.plotting.plot_self_consistency.html" class="btn btn-neutral float-left" title="radtraq.plotting.plot_self_consistency" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="generated/radtraq.proc.calc_avg_profile.html" class="btn btn-neutral float-right" title="radtraq.proc.calc_avg_profile" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Example on how to plot out a corner reflector raster &mdash; RadTraq 0.post1+g764607b documentation</title>
+  <title>Example on how to plot out a corner reflector raster &mdash; RadTraq 0.post1+g4a47f69 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/plot_directive.css" type="text/css" />
@@ -38,7 +38,7 @@
             <a href="../../index.html" class="icon icon-home"> RadTraq
           </a>
               <div class="version">
-                0.post1+g764607b
+                0.post1+g4a47f69
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -50,11 +50,14 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">RadTraq Example Gallery</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Example on how to plot out a corner reflector raster</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_cfad.html">Example on how to calculate and plot cfad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_dual_doppler_lobes.html">Dual Doppler Lobe Utility</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_cloud_mask.html">Example on how to calculate and plot cloud masks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_self_consistency.html">Self-Consistency Plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_zdr_check.html">ZDR Bias Calculation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plot_mask_vpt.html">Example on how to calculate and plot average profiles</a></li>
 </ul>
 </li>
@@ -108,11 +111,11 @@ the corner reflector location information</p>
 <span class="c1"># Process and plot raster file</span>
 <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">data</span></a> <span class="o">=</span> <span class="n">radtraq</span><span class="o">.</span><span class="n">plotting</span><span class="o">.</span><span class="n">corner_reflector</span><span class="o">.</span><span class="n">plot_cr_raster</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">target_range</span><span class="o">=</span><span class="mf">478.</span><span class="p">,</span>
                                                         <span class="n">el_limits</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">],</span> <span class="n">noplot</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<a href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
+<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 <span class="n">obj</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.585 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.489 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-source-auto-examples-plot-corner-reflector-raster-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/a75f5f6c5daade3fcda891b4d8e1f089/plot_corner_reflector_raster.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_corner_reflector_raster.py</span></code></a></p>
